@@ -1,0 +1,20 @@
+name: second Workflow
+on: [push]
+
+jobs:
+  run-firdt-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: display node version on linux
+        run: node -v
+  run-parallel-comand:
+    runs-on: windows-latest
+    steps:
+      - name: display node version on win
+        run: node -v
+  run-second-command:
+    runs-on: macos-latest
+    needs: run-firdt-command
+    steps:
+      - name: Display nodeversion on mac
+        run: node -v

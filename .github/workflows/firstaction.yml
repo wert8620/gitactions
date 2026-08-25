@@ -1,5 +1,5 @@
-name: manual Workflow
-on: workflow_dispatch
+name: first Workflow
+on: [push]
 
 jobs:
   run-firdt-command:
