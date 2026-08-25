@@ -1,0 +1,13 @@
+name: third Workflow
+on: [push]
+
+jobs:
+  run-firdt-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display text
+        run: echo "Some Text2"
+      - name: command in multiline
+        run: |
+          pwd
+          ls -al
