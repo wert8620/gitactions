@@ -1,0 +1,9 @@
+name: First Workflow
+on: [push]
+
+jobs:
+  run-firdt-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display text
+        run: echo "Some Text"
