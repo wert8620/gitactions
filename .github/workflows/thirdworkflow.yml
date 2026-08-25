@@ -2,7 +2,7 @@ name: third Workflow
 on: [push]
 
 jobs:
-  run-firdt-command:
+  run-third-command:
     runs-on: ubuntu-latest
     steps:
       - name: Display text
@@ -11,3 +11,8 @@ jobs:
         run: |
           pwd
           ls -al
+      - uses actions/checkout@v4
+      - name: list files
+          run: |
+            pwd
+            ls -al
